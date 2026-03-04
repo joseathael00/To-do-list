@@ -1,0 +1,104 @@
+#container-create-task {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 12%;
+
+  height: 80px;
+  width: 160px;
+
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  top: 80%;
+  left: 37%;
+
+  background-color: #77c7a0;
+  border-radius: 15px;
+  border: 2px solid #3e6854;
+}
+#create-task {
+  height: 50%;
+  width: 100%;
+
+  font-size: 120%;
+
+  border-radius: 7px;
+  border: 2px solid #3e6854;
+  background-color: #96eec4;
+  color: #1b3c2c;
+}
+#task-name-input {
+  height: 50%;
+  width: 100%;
+
+  font-size: 90%;
+  outline: none;
+
+  border-radius: 7px;
+  border: 2px solid #3e6854;
+  background-color: #96eec4;
+}
+#task-name-input:focus {
+  outline: none;
+}
+#task-name-input::placeholder {
+  padding-left: 2px;
+  color: #1b3c2c;
+}
+@media (min-width: 375px) {
+  #container-create-task {
+    left: 43%;
+  }
+}
+@media (min-width: 425px) {
+  #container-create-task {
+    left: 50%;
+    top: 82%;
+  }
+}
+@media (min-width: 768px) {
+  #container-create-task {
+    left: 72%;
+    top: 81%;
+  }
+}
+@media (min-width: 1024px) {
+  #container-create-task {
+    left: 80%;
+    top: 81%;
+  }
+}
+@media (min-width: 1024px) {
+  #container-create-task {
+    left: 80%;
+    top: 81%;
+  }
+}
+@media (min-width: 1440px) {
+  #container-create-task {
+    left: 85%;
+    top: 81%;
+  }
+}
+@media (min-width: 2560px) {
+  #container-create-task {
+    left: 87%;
+    top: 80%;
+    height: 170px;
+    width: 250px;
+    font-size: 130%;
+  }
+  #task-name-input::placeholder {
+    padding-left: 5px;
+  }
+  #task-name-input {
+    padding-left: 3px;
+  }
+}
