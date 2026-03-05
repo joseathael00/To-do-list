@@ -3,6 +3,7 @@ const containerDiv = document.getElementById("container");
 const inputNameTask = document.getElementById("task-name-input");
 
 function create() {
+  inputNameTask.value = "";
   const newTask = document.createElement("div");
   const taskName = document.createElement("p");
   const check = document.createElement("button");
