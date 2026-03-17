@@ -4,6 +4,8 @@ const containerDiv = document.getElementById("container");
 const inputNameTask = document.getElementById("task-name-input");
 
 function create() {
+  if (!inputNameTask.value || inputNameTask.value.trim() === "") return;
+
   // ? Cria elementos de div, p e button
   // ? E aplica estilos css já prontos neles
   const newTask = document.createElement("div");
