@@ -1,3 +1,14 @@
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+.animation-disappear {
+  animation: disappear 500ms ease-in-out forwards;
+}
 .task-item {
   display: flex;
   flex-direction: row;
@@ -5,7 +16,7 @@
   height: auto;
   width: 93%;
 
-  gap: 5%;
+  gap: 15px;
 
   align-items: center;
 }
@@ -20,64 +31,24 @@
 
   border-radius: 100px;
 }
+.check:hover {
+  opacity: 0.7;
+  background-image: url("/assets/check.svg");
+
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.check:active {
+  background-color: rgb(148, 215, 197);
+}
 .task-name {
   width: 90%;
-  font-size: 120%;
+  height: 1.5rem;
+  font-size: 20px;
 
-  padding-bottom: 2%;
-  padding-top: 2%;
+  padding-top: 8px;
+
   color: #5b9479;
   border-bottom: 2px solid #77c7a0;
-}
-
-@media (min-width: 375px) {
-  .check {
-    width: 14%;
-  }
-}
-@media (min-width: 425px) {
-  .check {
-    width: 12%;
-  }
-}
-@media (min-width: 728px) {
-  .check {
-    width: 7%;
-  }
-}
-@media (min-width: 1024px) {
-  .task-item {
-    gap: 2%;
-  }
-  .check {
-    width: 5%;
-    padding-top: 0%;
-    padding-bottom: 0%;
-  }
-}
-@media (min-width: 1440px) {
-  #container {
-    gap: 2%;
-  }
-  .task-name {
-    text-align: left;
-    padding-bottom: 1%;
-    padding-top: 1%;
-  }
-  .check {
-    width: 3%;
-    height: 80%;
-  }
-}
-@media (min-width: 2560px) {
-  .check {
-    width: 5rem;
-    height: 5rem;
-  }
-  .task-name {
-    font-size: 150%;
-  }
-  h1 {
-    font-size: 300%;
-  }
 }
