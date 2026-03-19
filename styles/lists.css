@@ -33,7 +33,6 @@
 }
 .check:hover {
   opacity: 0.7;
-  background-image: url("/assets/check.svg");
 
   background-size: 70%;
   background-repeat: no-repeat;
